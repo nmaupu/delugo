@@ -1,6 +1,7 @@
 package cli
 
 import (
+	"fmt"
 	"github.com/gdm85/go-libdeluge"
 	"github.com/jawher/mow.cli"
 	"log"
@@ -14,9 +15,9 @@ var (
 	port                     *int
 )
 
-func Process() {
-	app := cli.App("delugo", "Deals with a deluged torrents daemon")
-	//app.Spec = "[--verbose] --address --port --username --password"
+func Process(appName, appDesc, appVersion string) {
+	app := cli.App(appName, appDesc)
+	app.Version("version", fmt.Sprintf("delugo version %s", appVersion))
 
 	verbose = app.BoolOpt("v verbose", false, "Verbose mode")
 	host = app.StringOpt("a address", "127.0.0.1", "Host to connect to")
