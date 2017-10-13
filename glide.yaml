@@ -1,0 +1,6 @@
+package: github.com/nmaupu/delugo
+import:
+- package: github.com/gdm85/go-libdeluge
+  version: cdf20b116ec809254b1c16abbf5d741a38bd803c
+- package: github.com/jawher/mow.cli
+  version: ^1.0.2

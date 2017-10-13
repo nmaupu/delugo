@@ -1,0 +1,10 @@
+hash: 5b223f9ef0ded5aa018bb68b0d423d6359914e415a8b516b4186afb820af1f59
+updated: 2017-10-14T00:16:02.266327291+02:00
+imports:
+- name: github.com/gdm85/go-libdeluge
+  version: cdf20b116ec809254b1c16abbf5d741a38bd803c
+- name: github.com/gdm85/go-rencode
+  version: ce738ff35380313eb2a2777a9e0e332a40aa02d2
+- name: github.com/jawher/mow.cli
+  version: 89bd73e5017374498afb615659500c3559ff42b3
+testImports: []
